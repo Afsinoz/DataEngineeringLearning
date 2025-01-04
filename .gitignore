@@ -1,0 +1,14 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+1_week/2_docker_sql/ny_taxi_postgres_data 
+1_week/2_docker_sql/dataCSVfiles 
+1_week/2_docker_sql/output.csv 
+
