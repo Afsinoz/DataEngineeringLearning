@@ -8,14 +8,13 @@ terraform {
 }
 
 provider "google" {
-  credentials = "./keys/my_creds.json"
-  project     = "terraform-learning-446910"
-  region      = "europe-west9"
+  credentials = file(var.credentials)
+  project     = var.project
+  region      = var.region
 }
-
 resource "google_storage_bucket" "demo-bucket" {
-  name          = "terraform-learning-446910-terra-bucket"
-  location      = "EU"
+  name          = var.gcs_bucket_name
+  location      = var.location
   force_destroy = true
 
   // Age is gonna be in days.
@@ -28,4 +27,11 @@ resource "google_storage_bucket" "demo-bucket" {
       type = "AbortIncompleteMultipartUpload"
     }
   }
+}
+
+resource "google_bigquery_dataset" "demo_dataset" {
+  dataset_id = var.bq_dataset_name
+  location   = var.location
+  // delete_contents_on_destroy=false normally, 
+  //if you want to add a table, and want to destroy it make it true
 }
