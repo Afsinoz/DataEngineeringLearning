@@ -1,3 +1,8 @@
+# Personal notes
+
+PersonalNotes.md
+
+
 # Python-generated files
 __pycache__/
 *.py[oc]
@@ -11,8 +16,10 @@ wheels/
 1_week/2_docker_sql/ny_taxi_postgres_data 
 1_week/2_docker_sql/dataCSVfiles 
 1_week/2_docker_sql/output.csv 
+1_week/2_docker_sql/.DS_Store
 
 
+.DS_Store 
 # Credential
 terraform/keys/
 
