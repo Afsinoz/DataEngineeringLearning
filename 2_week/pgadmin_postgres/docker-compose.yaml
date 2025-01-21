@@ -8,8 +8,8 @@ services:
       POSTGRES_DB: postgres-db
     ports:
       - "5434:5432"  # Use 5434 to avoid conflicts with the first file
-    networks:
-      - shared_networks
+        #    networks:
+        #      - shared_networks
 
   pgadmin:
     image: dpage/pgadmin4
@@ -19,10 +19,10 @@ services:
       PGADMIN_DEFAULT_EMAIL: admin@admin.com
       PGADMIN_DEFAULT_PASSWORD: admin
 
-    networks:
-      - shared_networks 
-
-networks:
-  shared_networks:
-    name: kestra_postgre
-    external: true
+        #    networks:
+        #      - shared_networks 
+        #
+        #networks:
+        #  shared_networks:
+        #    name: kestra_postgre
+        #    external: true
