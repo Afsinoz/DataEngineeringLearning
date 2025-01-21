@@ -11,12 +11,13 @@ dist/
 wheels/
 *.egg-info
 
-# Virtual environments
+# Virtual environments and data
 .venv
 1_week/2_docker_sql/ny_taxi_postgres_data 
 1_week/2_docker_sql/dataCSVfiles 
 1_week/2_docker_sql/output.csv 
 1_week/2_docker_sql/.DS_Store
+4_week_Analytics_Engineering/data 
 
 
 .DS_Store 
