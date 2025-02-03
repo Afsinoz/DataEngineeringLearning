@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: staging
+    database: kestra-learning-ny-taxi
+    schema: de_zoomcamp
+
+    tables:
+      - name: green_tripdata
+      - name: yellow_tripdata
